@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captions</title>
+</head>
+
+<body style="background-color: #414141;">
+    <video controls poster="./poster.jpg" height="400" width="400" style="border-radius: 5px;" disablepictureinpicture preload="metadata" loop>
+        <source src="./videoplayback.mp4" type="video/mp4" />
+        <track kind="captions" src="./WEBVTT - Husn.vtt" lang="hi" label="Hindi">
+        <track kind="captions" src="./WEBVTT - Husn_eng.vtt" lang="en" label="English">
+    </video>
+
+    <!-- <audio controls>
+        <source src="Perfect.mp3" type="audio/mp3" />
+
+        <track kind="subtitles" src="./WEBVTT - Husn_eng.vtt" lang="en" label="English">
+        <p>This will work
+            <a href="Perfect.mp3"></a>
+        </p>
+
+    </audio> -->
+
+    <!-- <audio src="./Perfect.mp3">
+        <p style="color: white;">Not rendering</p>
+    </audio> -->
+</body>
+
+</html>

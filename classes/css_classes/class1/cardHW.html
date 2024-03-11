@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            padding: 50px;
+        }
+
+        .container{
+            width: 380px;
+            border: none;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            height: 365px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .container figure img {
+            border-radius: 10px;
+
+        }
+        .course-info{
+            margin: 8px 0;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+        }
+        hr{
+            width:73%;
+            border: 1px solid rgba(128, 128, 128, 0.27);
+        }
+        span{
+            display: inline-block;
+            margin: 15px 3px;
+        }
+        .amount{
+            color: rgba(70, 70, 203, 0.685);
+            font-size: large;
+            font-weight: 600;
+        }
+        .amount-strikeThrough{
+            font-size: large;
+            font-weight: 600;
+            color: rgba(128, 128, 128, 0.842);
+        }
+        .amount-discount{
+            background-color: rgb(21, 208, 140);
+            padding: 3px 3px;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <figure>
+            <img src="assets/card_image.jpg" alt="course-image" width="340" height="200"/>
+            <figcaption class="course-info">
+                Web Development Master Course @dot Batch
+            </figcaption>
+        </figure>
+        <hr>
+        <span class="amount">₹4500</span>
+        <span class="amount-strikeThrough"><del>₹6999</del></span>
+        <span class="amount-discount">42% off</span>
+    </div>
+</body>
+</html>

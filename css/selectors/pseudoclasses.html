@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #222121;
+            color: white;
+        }
+
+
+        /*
+        ::before
+            */
+        /*.imp-label::before:hover{ */ 
+            /* NOte-
+            this wont work as what exactly do we need we are saying when we hover then, before the name all the following properties should be applied so why are you even putting the ::before first then ? Does it even make sense? You want the user first to hover on the name then only the properties should be applied then write the hover first man!! 
+            */
+        /* 
+        .imp-label:hover::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: palevioletred;
+        }
+
+        input[type="button"]:hover{
+            background-color: palevioletred;
+        }
+
+        */
+
+        /*:first-child :last-child :invalid :only-child*/
+        /*
+        article :first-child{
+            color: rgb(249, 10, 249);
+        }
+
+        section :last-child{
+            color: peru;
+        }
+        */
+        /*article :only-child{ is the same as following*/
+            
+        article :first-child:last-child{
+            color: brown;
+        }
+
+
+        input[type="text"]:invalid{
+            border: 2px solid red;
+        }
+
+        input[type="email"]:focus{
+            width: 100px;
+        }
+
+        .email:hover{
+            background-color: green;
+        }
+
+
+        input[type="button"]{
+            background-color: blue;
+            padding: 5px 15px;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        input[type="button"]:hover{
+            color: blue;
+            background-color: white;
+            border: 4 px solid #383;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label class="imp-label" for="name">Name : </label>
+        <input type="text" name="name" id="name" required/> 
+
+        <label for="email" class="email">Email : </label>
+        <input type="email" name="email" id="email" required/> 
+
+        <!-- <button data-tooltip="Tooltip" type="submit">Submit</button> -->
+
+        <input type="button" value="Submit">
+    </form>
+
+    <article>
+        <p>This is a paragraph for this article</p>
+    </article>
+    
+    <section>
+        <p>this is first-child paragraph of this section</p>
+        <p>this is second child of this section</p>
+    </section>
+
+    <aside>
+        <p>this is first-child of this aside tag</p>        
+        <p>this is second-child of this aside tag</p>        
+    </aside>
+
+    <article>
+        <span>Lets see this is another article which is the first para</span>
+        <p>this is second para</p>
+    </article>
+
+
+
+    <!-- Pseudo-classes enable you to target an element when it's in a particular state, as if you had added a class for that state to the DOM. Pseudo-elements act as if you had added a whole new element to the DOM, and enable you to style that. The ::before and ::after pseudo-elements enable you to insert content into the document using CSS. -->
+</body>
+</html>

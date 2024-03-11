@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            /*background-image: linear-gradient(rgb(255, 110, 57),white,green);*/
+            /*background-image: radial-gradient(circle,green,yellow,pink,orange,blue);*/
+            /*background-image: linear-gradient(rgba(155, 18, 155, 0.867) 10%,rgba(165, 42, 42, 0.851) 50%,hotpink);*/
+            /*background-image: radial-gradient(yellow 10%,rgb(70, 70, 237) 25%);*/
+            /*background-image: conic-gradient(yellow 5%,green 10%,blue 20%,pink 30%,orange);*/
+            /*background-image: conic-gradient(in hsl longer hue, red, blue, green, red);*/
+            background-image: conic-gradient(
+            hsl(360 100% 50%),
+            hsl(315 100% 50%),
+            hsl(270 100% 50%),
+            hsl(225 100% 50%),
+            hsl(180 100% 50%),
+            hsl(135 100% 50%),
+            hsl(90 100% 50%),
+            hsl(45 100% 50%),
+            hsl(0 100% 50%));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

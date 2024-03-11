@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*  and selector (chained)*/
+        /* all the classes or the things which are specified should be there*/ 
+        li.bg-black#text-white{
+            background-color: black;
+            color: orange;
+        }
+        li.bg-black#unique2{
+            color: purple;
+        }
+
+        /* Combined Selector */
+        /*span, li {
+            background-color: burlywood;
+        }*/
+
+        /*inside an element*/
+        div ul li{
+            background-color: fuchsia;
+        }
+
+
+        /* direct child*/
+        div > li {
+            background-color: rgb(214, 214, 21);
+        }
+
+        .sibling + p{
+            background-color: aqua;
+        }
+
+
+        a[href = "#"]{
+            text-decoration: none;
+            color: purple;
+        }
+
+
+        body > p::first-line{
+            color: rgb(255, 35, 255);
+        }
+
+        article *:first-child{
+            color: rgb(2, 217, 250);
+            font-weight: bold;
+        }
+
+
+
+
+
+        /*
+        Attribute Selectors 
+        
+        li[class]{
+            color: rgb(240, 108, 240);
+            font-size: 200%;
+        }
+        
+        li[class~="a"]{
+            background-color: rgb(8, 212, 49);
+        }
+        li[class='a']{
+            background-color: aquamarine;
+        }
+        */
+
+        /*
+        Substring matching selectors
+        */
+
+        /*
+        class attribute value should start from the following value, so it to work else if the class name is not starting from that value then the following won't work
+        */
+        li[class^="box-"]{
+            background-color: yellow;
+        }
+         /*
+        if at the end of class attribute value the following is written then only the following will apply: else if the class attribute value is not ending with that then it won't work
+        */
+        li[class$="-box" ]{
+            background-color: crimson;
+        }
+        /*
+        if anywhere the box word is written in any class value then the following will apply
+        */
+        li[class*="box"]{
+            background-color:chartreuse;
+        }
+
+        /*
+        the following will check if any class attribute is having the value as
+    (-box) then, this i means it will check case insensitively. Now it doesn't matter if you are writing it as (-BOx) or anything you want just it should be (-box), now the case won't matter as long as you have given that i over there.. 
+    Peace :)
+        */
+
+        li[class$="-box" i]{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    <span>
+        This is a span
+    </span>
+    <ul>
+        <li class="bg-black" id="text-white">item1</li>
+        <li class="bg-black">item2</li>
+        <li class="bg-black text-white">item3</li>
+    </ul>
+
+
+    <ul>
+        <li id = "unique1">item1</li>
+        <li id = "unique2">item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+    <div>
+        <li>This is some list item</li>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+
+    <section>
+        <p>Test1</p>
+        <p >Test2</p>
+        <p>Test3</p>
+        <p class="sibling">Test4</p>
+        <p>Test5</p>
+    </section>
+
+
+    <a href="#">Going to Hash</a>
+    <br />
+    <a href="https://www.google.com">Going to Google now</a>
+
+
+    <p>
+        <span>THis is span</span>
+        <br />
+        this is another line
+    </p>
+
+    <p>
+        this is the first line
+    <br/>
+    this is the second line
+    
+    </p>
+
+    <article>
+        <p>this is a para</p>
+        <p>this is another para which is the second child of this  article element
+        </p>
+    </article>
+
+    <article>
+        <p>this is another para</p>
+
+    </article>
+
+
+    -->
+
+    <div>
+        <!-- Explaining the Attribute selector stuff -->
+        <ol>
+            <li >My Apple</li>
+            <li class="a">My Watermelon</li>
+            <li class="a b">My Juice</li>
+            <li class="ab">My Mouse</li>
+        </ol>
+
+
+        <!-- Substring matching selectors -->
+
+        <ul>
+            <li>item1</li>
+            <li class="box-item">item2</li>
+            <li class="item3-box">item3</li>
+            <li class="box iAmBox AnotherBox">item4</li>
+
+            <li class="noclass-BOX">this is another item</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        label {
+            
+            font:
+                1rem 'Fira Sans',
+                sans-serif;
+        }
+
+        input,
+        label {
+            margin: 0.4rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THis is created by Steve</h1>
+
+    <form action="">
+        <h3>Contact Us Form</h3>
+
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+
+        <br />
+        <br />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+
+        <br />
+        <br />
+
+        <label for="phone">
+            Enter your phone number:<br />
+  <small>Format: 7979016685</small>
+        </label>
+        <input type="tel" name="phone" id="phone" pattern="
+        [0-9]{10}
+        " maxlength="10" list="datalist" />
+
+        <datalist id="datalist">
+            <option value="7979016685"></option>
+            <option value="1234567890"></option>
+            <option value="0123456789"></option>
+            <option value="7979016685"></option>
+        </datalist>
+
+        <br />
+        <br />
+
+        <label for="gender">
+            Gender : 
+            <select name="gender" id="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Male">Female</option>
+                <option value="Male">Rather Not to say</option>
+            </select>
+        </label>
+
+
+        <br />
+        <br />
+
+
+        <label for="dob">DOB: </label>
+        <input type="date" name="date" id="date">
+
+        <br />
+        <br />
+
+        <label for="rating">
+            Rating: 
+        </label>
+        <input type="radio" name="rating" id="rating"> 1
+        <input type="radio" name="rating" id="rating"> 2
+        <input type="radio" name="rating" id="rating"> 3
+        <input type="radio" name="rating" id="rating"> 4
+        <input type="radio" name="rating" id="rating"> 5
+
+        <br />
+        <br />abel for="textarea">
+            Enter your message : 
+        </label>
+        <br />
+        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter your message"></textarea>
+
+        <br />
+        <input type="submit" >
+        <input type="reset" >
+
+        <br />
+        <a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+        <a target="_blank" href="https://telegram.com"><i class="fa-brands fa-telegram"></i></a>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension Properties</title>
+    <style>
+        .container {
+            border: 1px solid black;
+
+            overflow: auto;
+            max-width: 50%;
+
+            max-height: 640px;
+
+        }
+
+        .box1 {
+            margin: 20px;
+            border: 1px solid black;
+            min-width: 100px;
+
+
+            max-height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lta nostrum laboriosam quae odit architecto dolorum in corrupti non maxime laborum distinctio. Laborum quidem
+        voluptate nemo, assumenda ratione vero, commodi incidunt suscipit quos culpa, omnis in pariatur? Et harum sit
+        quod magnam in.
+    </div>
+
+    <div class="box1">
+        neque dolorum temporibus laborum, tenetur atque quae quisquam fugiat, soluta voluptatem qui cupm itaque in
+        repellat laboriosam distinctio. Omnis placeat eveniet dolor commodi maxime. Natus inventore obcaecati quas in
+        fugiat ullam eum similique veniam quod saepe vel at aliquam ipsa, earum praesentium eveniet, ipsum incidunt
+        magnam doloremque quibusdam. Nulla quaerat necessitatibus quam, soluta debitis natus repellat! Modi dolores sunt
+        quidem quam, deleniti unde at odit, eum similique laboriosam impedit quaerat deserunt atque, voluptas vel!
+        Pariatur mollitia a aperiam eum sed, facere nihil itaque exercitationem similique! Minus vero minima quidem,
+        illo dolorem odio! Eligendi perspiciatis reiciendis rem asperiores possimus quaerat, maiores, exercitationem
+        aspernatur magnam praesentium adipisci!
+
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- 
+    min-height ??
+=> The min-height property always overrides both height and max-height.
+=> only +ve values
+=> If either value is greater (height > min-height or vice-versa), the value that is greatest will be the one rendered
+
+=> height sets an upper limit by defining the exact height an element should take, while min-height sets a lower limit, ensuring that the element is at least as tall as the specified value, even if the content would naturally make it smaller. Together, they provide a range within which the element's height can vary based on its content and the specified constraints.
+
+Why it even exists when height itself is serving as upperbound - max-height ??
+=> Well, while height and min-height set lower and upper limits, respectively, on the height of an element, max-height provides an additional constraint by setting the maximum height allowed for the element. 
+
+=>Consider scenarios where you want an element to grow dynamically with its content, up to a certain point, but not beyond that. In such cases, you'd use max-height to cap the height once it reaches a specific value.
+
+=> For example, you might want a container to expand based on user-generated content, but you also want to prevent it from becoming too large and potentially breaking the layout. You could set a max-height to control how tall it can grow.
+
+
+
+------------------------------------------- OVERFLOW ---------------------------------------
+visible - it will be visible
+scroll - give the scrollbar if overflow is present
+hidden - hide all the content which is overflowing
+auto - if the content is less then will behave as visible else behave as scroll
+
+-->

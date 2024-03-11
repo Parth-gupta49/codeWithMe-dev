@@ -1,0 +1,17 @@
+CSS Specificity:
+
+Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element.
+
+Important Notes
+
+- The universal selector (*) has no specificity value (0,0,0,0)
+- Pseudo-elements (e.g. :first-line) get 0,0,0,1 unlike their psuedo-class brethren which get 0,0,1,0
+- The pseudo-class :not() adds no specificity by itself, only what’s inside it’s parentheses.
+- The !important value appended a CSS property value is an automatic win. It overrides even inline styles from the markup.
+- Examples:-
+	- ul > li ul li ol li:first-letter
+		- specificity value : 0007
+	- #footer *:not(nav) li
+		- specificity value : 0102
+	- ul#nav li.active a
+		- specificity value : 0113

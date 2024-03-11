@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transforms</title>
+    <style>
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .translate{
+            transform: perspective(100px) translateZ(-50px);
+        }
+        .scale{
+            /*margin: 200px;*/
+            /*transform: perspective(100px) scaleZ(2) rotateX(45deg);*/
+        }
+        .skew{
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box rotate"></div>
+    <div class="box scale"></div>
+    <div class="box translate"></div>
+    <div class="box skew">Skew</div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        body{
+            background-color: beige;
+            
+        }
+        .box{
+            margin: 50px;
+            border: 1px solid black;
+            background-color: aqua;
+            /*transform: translate(100px,-150%);*/
+            width: fit-content;
+            
+            /*transform: rotateX(169deg);*/
+
+            transform: skewX(120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+</body>
+</html> -->
