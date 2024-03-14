@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    /* width: 100vw; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+    font-family: poppins, "sans-serif";
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+#bg,#fore{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+#bg{
+    transform: translateZ(-10rem) scale(4);
+}
+
+#fore{
+    transform: translateZ(-6.5rem) scale(2.05);
+
+}
+
+h1{
+    position: absolute;
+    top:5rem;
+    left: 50%;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-family: poppins, "sans-serif";
+}
+
+section{
+    width: 100%;
+    background-color: rgb(45,45 ,45 );
+    color: white;
+    padding: 5rem;
+
+}
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg1{
+    background-image: url(./../assets/biking-bg1.jpg);
+}
+.bg2{
+    background-image: url(./../assets/paragliding-bg2.jpg);
+}
+.bg3{
+    background-image: url(./../assets/surfing-bg3.jpg);
+}
+.secHeading{
+    font-size: 5rem;
+    padding: 0 15rem;
+    
+
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem;
+    font-family: poppins, "sans-serif";
+    /* position: absolute; */
+}
+.desc{
+    /* position: absolute; */
+    background-color: #fff;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}

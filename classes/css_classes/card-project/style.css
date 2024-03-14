@@ -1,0 +1,103 @@
+:root{
+    --primaryColor:#70768f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+    font-family: "Montserrat", sans-serif;;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    width: 700px;
+    height: 400px;
+    border-radius: 1rem;
+    display: flex;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+
+    /* align-content: space-between; */
+}
+
+.item-img{
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+    width: 50rem;
+    height: 100%;
+    background-size:cover;
+    background-image: url(./assets/mug.jpg);
+    background-position: center;
+}
+
+.item-desc{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-content: space-between;
+}
+.item-name{
+    margin-left: 0.2rem;
+    letter-spacing: 0.3rem;
+    color: var(--primaryColor);
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.item-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1em;
+    padding: 1rem 0rem;
+    padding-right: 5rem;
+
+}
+.item-text{
+    color: var(--primaryColor);
+    font-weight: 500;
+}
+
+
+.amount{
+    margin: 1.7rem 0;
+}
+.selling-amount{
+    font-size: 2rem;
+    color: #35705A;
+    font-weight: 700;
+    
+}
+.amount-strikethrough{
+    color: var(--primaryColor);
+}
+
+.btn{
+
+}
+
+#add-cart{
+    width: 100%;
+    padding: .7rem 0;
+    background-color: #35705A;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+}
