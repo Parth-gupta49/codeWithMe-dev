@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-acme: Acme;
+  --font-poppins: Poppins;
+  --font-dm-sans: "DM Sans";
+  --font-david-libre: "David Libre";
+  --font-contrail-one: "Contrail One";
+
+  /* font sizes */
+  --font-size-26xl: 2.813rem;
+  --font-size-12xl: 1.938rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-77xl: 6rem;
+  --font-size-6xl: 1.563rem;
+  --font-size-lg: 1.125rem;
+  --font-size-93xl: 7rem;
+  --font-size-5xl: 1.5rem;
+
+  /* Colors */
+  --color-gray-100: #101a24;
+  --color-gray-200: #181818;
+  --color-goldenrod: #f7b41a;
+  --color-white: #fff;
+  --neutral-04: #adb39e;
+  --color-darkslategray-100: #454545;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-81xl: 6.25rem;
+  --gap-11xl: 1.875rem;
+  --gap-4xs: 0.563rem;
+  --gap-3xs: 0.625rem;
+  --gap-46xl: 4.063rem;
+
+  /* Paddings */
+  --padding-xl: 1.25rem;
+  --padding-11xl: 1.875rem;
+  --padding-21xl: 2.5rem;
+
+  /* Border radiuses */
+  --br-81xl: 100px;
+  --br-8xs: 5px;
+  --br-31xl: 50px;
+}
